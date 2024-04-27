@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="icon" href="/assets/favicon-WktxB3Jw.ico" type="image/x-icon">
+
+  <script type="module" crossorigin src="/assets/index-A3vyLKtu.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-eJy9xv0A.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1 id="quizTitle">The Quiz</h1>
+
+        <!-- User Name Input Form -->
+        <div id="startContainer" class="user-input">
+            <!-- Added ID for start container -->
+            <input class="form-control" type="text" id="username" placeholder="Enter your name">
+            <button id="start-btn">Start Quiz</button>
+        </div>
+        <div id="timer" style="display:none;">Time: <span id="time">10</span>s</div>
+        <div id="Quiz" style="display:none;">
+            <!-- Changed class to ID -->
+            <div id="questionContainer">
+                <!-- Added question container -->
+                <h2 id="question">Question goes here</h2>
+            </div>
+            <div id="optionsContainer"></div>
+        </div>
+        <button id="restartGameButton" style="display:none;">Restart Game</button>
+    </div>
+
+    <div class="container" id="resultContainer" style="display:none;">
+        <h1 id="resultMessage"></h1>
+        <p id="timeTaken"></p>
+    </div>
+
+    <div class="container" id="highScoreLink" style="display:none;">
+        <h1 id="highscoreMessage"></h1>
+        <p id="highscore"></p>
+        <button id="showHighScoreButton">Show Highscore</button>
+    </div>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+body {
+  background: linear-gradient(to bottom, black, white);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Styles for the user-input section */
+.user-input {
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  background-color: #f9f9f9;
+}
+
+.user-input #username{
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #e8e8e8;
+  box-shadow: 20px 20px 60px #c5c5c5,
+    -20px -20px 60px #ffffff;
+  transition: 0.3s;
+}
+
+#username:focus, #textAnswer:focus{
+  outline-color: #e8e8e8;
+  background: #e8e8e8;
+  box-shadow: inset 20px 20px 60px #c5c5c5,
+     inset -20px -20px 60px #ffffff;
+  transition: 0.3s;
+}
+
+
+
+.user-input input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.user-input button {
+  padding: 10px 20px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-input button:hover {
+  background-color: #0056b3;
+}
+
+
+.app {
+  background: linear-gradient(to bottom, white, black);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+#timer {
+  font-family: 'Arial', sans-serif;
+  /* Using Arial font, but you can choose any */
+  font-size: 20px;
+  /* Larger font size for better visibility */
+  color: #333;
+  /* Dark grey color for the text */
+  background-color: #f0f0f0;
+  /* Light grey background */
+  border-radius: 5px;
+  /* Rounded corners */
+  padding: 10px 20px;
+  /* Padding for some space around the text */
+  margin: 10px 0;
+  /* Margin for spacing around the element */
+  display: inline-block;
+  /* Makes the div behave like an inline element */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for a bit of depth */
+}
+
+#time {
+  font-weight: bold;
+  /* Makes the time bold */
+  color: #27ae60;
+  /* Green color for the time, easy to read */
+}
+
+
+.app h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.quiz {
+  padding: 20px 0;
+}
+
+.app h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.btn,
+#showHighScoreButton, #restartGameButton, #start-btn{
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid #d20d0d;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #ba1111;
+  transition: all 0.5s ease-in-out;
+}
+
+#start-btn:hover{
+  background-color: rgb(212, 198, 123);
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover {
+  background-color: rgb(212, 198, 123);
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+#showHighScoreButton:hover {
+  background-color: rgb(212, 198, 123);
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+.container {
+  background-color: #f8f9fa;
+  /* Light gray background */
+  border: 1px solid #dee2e6;
+  /* Light gray border */
+  border-radius: 5px;
+  /* Rounded corners */
+  padding: 20px;
+  /* Padding inside the container */
+  text-align: center;
+  /* Centering the text */
+  max-width: 500px;
+  /* Maximum width of the container */
+  margin: 20px auto;
+  /* Centering the container on the page */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adding a subtle shadow */
+}
+
+#resultMessage {
+  font-size: 24px;
+  /* Larger font size for the heading */
+  color: #343a40;
+  /* Darker text color for contrast */
+  margin-bottom: 15px;
+  /* Space below the heading */
+}
+
+#timeTaken {
+  font-size: 18px;
+  /* Slightly smaller font size than the heading */
+  color: #6c757d;
+  /* Slightly lighter text color */
+  margin-bottom: 15px;
+  /* Space below the paragraph */
+}
+
+button#restartGameButton:hover {
+  background-color: rgb(212, 198, 123);
+  box-shadow: 1px 1px 200px #252525;
+  color: #fff;
+  border: none;
+}
+
+
+/* Question Styles */
+#question h2 {
+  color: #333;
+  background-color: #eaeaea;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Options Container */
+#optionsContainer {
+  margin-top: 20px;
+}
+
+/* Radio button and labels */
+#optionsContainer label {
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#optionsContainer label:hover {
+  background-color: #f0f0f0;
+}
+
+#optionsContainer input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Text Input */
+/* stylelint-disable-next-line no-descending-specificity */
+#textAnswer {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 1rem;
+  background: #e8e8e8;
+  box-shadow: 20px 20px 60px #c5c5c5,
+    -20px -20px 60px #ffffff;
+  transition: 0.3s;
+  display: block;
+}
+
+table {
+  width: 100%;
+  /* Full-width */
+  border-collapse: collapse;
+  /* Collapse borders */
+  margin: 20px 0;
+  /* Spacing around the table */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Modern font style */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  /* Slight shadow for depth */
+}
+
+thead {
+  background-color: #333;
+  /* Dark background for the header */
+  color: white;
+  /* White text for the header */
+}
+
+th,
+td {
+  text-align: center;
+  /* Center align text */
+  padding: 12px;
+  /* Padding inside cells */
+  border-bottom: 2px solid #ddd;
+  /* Bottom border for cells */
+}
+
+tbody tr {
+  background-color: #f9f9f9;
+  /* Light background for the body */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #eee;
+  /* Alternate color for odd rows */
+}
+
+
+th {
+  height: 60px;
+  /* Height for header cells */
+  font-size: 16px;
+  /* Larger font size for headers */
+}
+
+td {
+  font-size: 14px;
+  /* Standard font size for data */
+}
